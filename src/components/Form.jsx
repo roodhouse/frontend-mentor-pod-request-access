@@ -3,12 +3,12 @@ import React from 'react'
 function Form() {
   return (
     <>
-        <form>
-            <div id='email'>
-                <input type="email" placeholder='Email address' />
+        <form className='flex flex-col justify-center items-center'>
+            <div id='email' className='mb-4 w-full'>
+                <input type="email" placeholder='Email address' className='bg-medBlue rounded-[28px] w-full text-white opacity-[0.5] font-["Chivo"] text-sm leading-[28px] pl-8 py-2' />
             </div>
-            <div id='submitDiv'>
-                <input name='submit' type="submit" id="submit" />
+            <div id='submitDiv' className='w-full'>
+                <input name='submit' type="submit" id="submit" value='Request Access' className='w-full rounded-[28px] bg-green shadow-[0_25px_20px_-20px_rgba(84,230,175,0.50)] text-darkBlue text-sm leading-[28px] font-["Chivo"] py-[9px]' />                    
             </div>
         </form>
     </>

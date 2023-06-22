@@ -15,7 +15,7 @@ function App() {
           <div id='body' className='mb-[36px]'>
             <Body />
           </div>
-          <div id='icons'>
+          <div id='icons' className='flex justify-evenly items-center mb-[51px]'>
             <Icons />
           </div>
           <div id='form'>

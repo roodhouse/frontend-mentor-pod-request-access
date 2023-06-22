@@ -8,16 +8,16 @@ function Icons() {
   return (
     <>
         <div id="spotify">
-            <img src={Spotify} alt="Spotify" />
+            <img src={Spotify} alt="Spotify" className='w-[56px] h-[17px]'/>
         </div>
         <div id="apple">
-            <img src={Apple} alt="Apple" />
+            <img src={Apple} alt="Apple" className='w-[45px] h-[17px]' />
         </div>
         <div id="google">
-            <img src={Google} alt="Google" />
+            <img src={Google} alt="Google" className='w-[73px] h-[11px]' />
         </div>
         <div id="pocket">
-            <img src={Pocket} alt="Pocket" />
+            <img src={Pocket} alt="Pocket" className='w-[77px] h-[15px]' />
         </div>
     </>
   )
