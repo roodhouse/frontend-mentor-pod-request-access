@@ -7,9 +7,6 @@ function Header() {
         <div id='logo'>
             <img src={Logo} alt="the logo" />
         </div>
-        <div id='name'>
-            <h1>pod</h1>
-        </div>
     </>
   )
 }
