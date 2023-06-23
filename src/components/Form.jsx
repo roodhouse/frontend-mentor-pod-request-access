@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 
-// check pattern below..
-
 function Form() {
 
     const [input, setInput] = useState('')
+
+    const emailRegex = /\w+@\w+\.\w{2,3}/;
+    const valP = document.getElementById('valP')
+
+    function isEmailValid(emailAddress) {
+        return emailRegex.test(emailAddress)
+    }
 
     const { register, handleSubmit, formState: {errors} } = useForm({defaultValues: {
         email: ''
@@ -17,12 +22,29 @@ function Form() {
         
         input.addEventListener('invalid', function(event) {
             event.preventDefault();
-            console.log(errors)
+            console.log(event.target.value)
+            
+            if(isEmailValid(event.target.value)) {
+                console.log('true')
+            } else {
+                console.log('false')
+                const errorMsg = document.getElementById('errorP');
+                errorMsg.innerHTML = 'Oops! Please check your email'
+                console.log(errorMsg)
+
+            }
+            
         })
+        
     },[])
     
     const onSubmit = (data) => {
         console.log(data)
+        const errorMsg = document.getElementById('errorP');
+                errorMsg.innerHTML = ''
+        const clearText = document.getElementById('email')
+        clearText.value = ''
+        
     }
 
   return (
@@ -30,7 +52,7 @@ function Form() {
         <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col justify-center items-center'>
             <div id='emailDiv' className='mb-4 w-full'>
                 <input 
-                    pattern=''
+                    
                     title='Please match the format I asked you to'
                     id='email' 
                     type="email" 
@@ -45,9 +67,9 @@ function Form() {
                     })} 
                     placeholder='Email address' 
                     className='bg-medBlue rounded-[28px] w-full decoration-white/[.50] font-["Chivo"] text-sm leading-[28px] pl-8 py-2 text-white' />
-                {/* <p>{errors.email?.message}</p> */}
+                <p id='errorP' className='text-warning text-sm font-["Chivo"] pl-8 mt-2'></p>
                 {errors.email?.message && (
-                    <p className='text-warning'>{errors.email.message}</p>
+                    <p id='valP' className='text-warning text-sm font-["Chivo"] pl-8 mt-2'>{errors.email.message}</p>
                 )}
             </div>
             <div id='submitDiv' className='w-full'>
