@@ -3,12 +3,12 @@ import React from 'react'
 function Body() {
   return (
     <>
-        <div id='headingContainer' className='flex flex-col items-center mb-4'>
-            <div id="headingTop" className='text-green font-["Chivo"] text-center text-[26px] leading-[38px]'>
+        <div id='headingContainer' className='flex flex-col items-center mb-4 md:pt-[93px] md:items-start md:mb-[31px]'>
+            <div id="headingTop" className='text-green font-["Chivo"] text-center text-[26px] leading-[38px] md:text-[48px] md:leading-[56px] md:text-left'>
                 <h2>PUBLISH YOUR PODCASTS <span className='text-white'>EVERYWHERE.</span></h2>
             </div>
         </div>
-        <div id='textContainer' className='text-lightPurple font-["Chivo"] text-[15px] leading-[25px] text-center'>
+        <div id='textContainer' className='text-lightPurple font-["Chivo"] text-[15px] leading-[25px] text-center md:text-lg md:text-left md:mr-[190px]'>
             <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
         </div>
     </>

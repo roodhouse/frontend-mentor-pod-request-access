@@ -49,8 +49,8 @@ function Form() {
 
   return (
     <>
-        <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col justify-center items-center'>
-            <div id='emailDiv' className='mb-4 w-full'>
+        <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col justify-center items-center md:flex-row md:flex-wrap'>
+            <div id='emailDiv' className='mb-4 w-full md:mb-0 md:w-[50%]'>
                 <input 
                     
                     title='Please match the format I asked you to'
@@ -66,15 +66,17 @@ function Form() {
                         },
                     })} 
                     placeholder='Email address' 
-                    className='bg-medBlue rounded-[28px] w-full decoration-white/[.50] font-["Chivo"] text-sm leading-[28px] pl-8 py-2 text-white' />
-                <p id='errorP' className='text-warning text-sm font-["Chivo"] pl-8 mt-2'></p>
-                {errors.email?.message && (
-                    <p id='valP' className='text-warning text-sm font-["Chivo"] pl-8 mt-2'>{errors.email.message}</p>
-                )}
+                    className='bg-medBlue rounded-[28px] w-full decoration-white/[.50] font-["Chivo"] text-sm leading-[28px] pl-8 py-2 text-white md:rounded-[28px_0px_0px_28px] md:py-[14px]' />
+                
             </div>
-            <div id='submitDiv' className='w-full'>
+            
+            <div id='submitDiv' className='w-full md:bg-medBlue md:rounded-[0px_28px_28px_0px] md:py-[5px] md:pr-[5px] md:w-[50%]'>
                 <input name='submit' type="submit" id="submit" value='Request Access' className='w-full rounded-[28px] bg-green shadow-[0_25px_20px_-20px_rgba(84,230,175,0.50)] text-darkBlue text-sm leading-[28px] font-["Chivo"] py-[9px]' />                    
             </div>
+            <p id='errorP' className='text-warning text-sm font-["Chivo"] pl-8 mt-2'></p>
+            {errors.email?.message && (
+                    <p id='valP' className='text-warning text-sm font-["Chivo"] pl-8 mt-2'>{errors.email.message}</p>
+                    )}
         </form>
     </>
   )
