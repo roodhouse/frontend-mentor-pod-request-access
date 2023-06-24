@@ -72,10 +72,12 @@ function Form() {
             <div id='submitDiv' className='w-full md:bg-medBlue md:rounded-[0px_28px_28px_0px] md:py-[5px] md:pr-[5px] md:w-[50%]'>
                 <input name='submit' type="submit" id="submit" value='Request Access' className='w-full rounded-[28px] bg-green shadow-[0_25px_20px_-20px_rgba(84,230,175,0.50)] text-darkBlue text-sm leading-[28px] font-["Chivo"] py-[9px] cursor-pointer hover:bg-lightGreen' />                    
             </div>
-            <p id='errorP' className='text-warning text-sm font-["Chivo"] pl-8 mt-2'></p>
-            {errors.email?.message && (
-                    <p id='valP' className='text-warning text-sm font-["Chivo"] pl-8 mt-2'>{errors.email.message}</p>
-                    )}
+            <div id='errorDiv' className='pl-8 mt-2 h-2'>
+                <p id='errorP' className='text-warning text-sm font-["Chivo"]'></p>
+                {errors.email?.message && (
+                        <p id='valP' className='text-warning text-sm font-["Chivo"]'>{errors.email.message}</p>
+                        )}
+            </div>
         </form>
     </>
   )
