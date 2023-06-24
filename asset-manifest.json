@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/frontend-mentor-pod-request-access/static/css/main.0905d643.css",
+    "main.js": "/frontend-mentor-pod-request-access/static/js/main.8bb472d7.js",
+    "static/media/image-host.jpg": "/frontend-mentor-pod-request-access/static/media/image-host.2b35f9074eb5679b627c.jpg",
+    "static/media/google-podcasts.svg": "/frontend-mentor-pod-request-access/static/media/google-podcasts.9c1b036bf60069a79372ef3177409fb1.svg",
+    "static/media/apple-podcast.svg": "/frontend-mentor-pod-request-access/static/media/apple-podcast.e5663f84f62417f2ff994aa237c47a22.svg",
+    "static/media/pocket-casts.svg": "/frontend-mentor-pod-request-access/static/media/pocket-casts.5813ce55ed3fe55cf3cac557dc8c0912.svg",
+    "static/media/spotify.svg": "/frontend-mentor-pod-request-access/static/media/spotify.07d7ad82d5b28f9947aba44ca856c59e.svg",
+    "static/media/logo.svg": "/frontend-mentor-pod-request-access/static/media/logo.f47677a643c79f406a3c9655e21c58b6.svg",
+    "static/media/bg-pattern-dots.svg": "/frontend-mentor-pod-request-access/static/media/bg-pattern-dots.a2597e7c189c706f735b91fcfeacc326.svg",
+    "index.html": "/frontend-mentor-pod-request-access/index.html",
+    "main.0905d643.css.map": "/frontend-mentor-pod-request-access/static/css/main.0905d643.css.map",
+    "main.8bb472d7.js.map": "/frontend-mentor-pod-request-access/static/js/main.8bb472d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0905d643.css",
+    "static/js/main.8bb472d7.js"
+  ]
+}
