@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       
-      <div id='container' className='h-screen'>
+      <div id='container' className='h-screen xl:h-full'>
         <div id='backgroundWrapper' className='absolute w-full md:flex md:justify-end'>
           <div id='backgroundImg' className='bg-[url("./assets/mobile/image-host.jpg")] md:bg-[url("./assets/tablet/image-host.jpg")] xl:bg-[url("./assets/desktop/image-host.jpg")] h-screen md:h-[767px] md:w-[491px] md:absolute md:bg-no-repeat md:z-10 xl:w-[888px] xl:h-[640px] xl:mt-[130px]'></div>
           <div id='background' className='h-screen opacity-[0.7992919683456421] bg-darkBlue absolute w-full bottom-0 md:hidden'></div>
@@ -29,7 +29,7 @@ function App() {
           <div id='form' className='md:order-3 md:pb-[64px] md:bg-darkBlue md:z-20 md:pr-[302px] xl:w-[723px] xl:pr-[301px]'>
             <Form />
           </div>
-          <div id='footer' className='hidden md:block md:bg-darkBlue md:order-5 xl:right-0 xl:bottom-[125px] xl:z-40 xl:bg-transparent xl:relative xl:w-full'>
+          <div id='footer' className='hidden md:block md:bg-darkBlue md:order-5 xl:right-0 xl:bottom-[125px] xl:z-40 xl:bg-transparent xl:relative xl:w-full xl:h-[232px]'>
             <Footer />
           </div>
         </div>
